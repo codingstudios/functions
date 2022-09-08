@@ -16,7 +16,7 @@ function myFunction() {
     name = file.getName();
     link = file.getUrl();
     download = file.getDownloadUrl();
-    array.push({ name, link, download });
+    array.push({ name: encodeURIComponent(name), link, download });
   }
   
   function encode(s) {
