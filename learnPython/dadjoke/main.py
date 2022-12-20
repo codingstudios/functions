@@ -3,7 +3,7 @@ file = open("jokes.txt", "r+");
 data = list(json.loads(file.readline()));
 
 while True:
-  result = requests.get("https://icanhazdadjoke.com/", headers={"accept":"application/json"}) 
+  result = requests.get("", headers={"accept":"application/json"}) 
   joke = result.json()
   print(f"{joke['joke']}");
   print("")
